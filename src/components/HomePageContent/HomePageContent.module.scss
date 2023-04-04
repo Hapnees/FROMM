@@ -1,0 +1,63 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include ui-padding(top, 10);
+	@include ui-margin(bottom, 10);
+}
+
+.title {
+	font-weight: 400;
+
+	text-transform: uppercase;
+	@include ui-font(8);
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+}
+
+.arrow {
+	width: 35px;
+	height: 35px;
+
+	background-color: $btn-color;
+	border-radius: 100%;
+
+	cursor: pointer;
+
+	padding: 5px;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.arrows {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+
+.news {
+	display: flex;
+	gap: 180px;
+	justify-content: center;
+
+	> li {
+		width: 300px;
+	}
+}
+
+.date {
+	color: #949494;
+	@include ui-margin(bottom, 3);
+}
+
+.newsTitle {
+	@include ui-font(5);
+	@include ui-margin(bottom, 4);
+}

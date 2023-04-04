@@ -1,0 +1,35 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.list {
+	display: flex;
+	gap: 80px;
+
+	> li {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		gap: 16px;
+
+		> h1 {
+			@include ui-font(7);
+		}
+
+		> p {
+			@include ui-font(5);
+		}
+
+		&:not(:last-child) {
+			@include ui-padding(right, 20);
+			border-right: 1px solid #000;
+		}
+	}
+	@include ui-padding(top, 4);
+}
+
+.button {
+	align-self: center;
+}

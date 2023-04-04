@@ -1,0 +1,22 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.nav {
+	display: flex;
+
+	@include ui-font(5);
+
+	> a {
+		padding: 12px 20px;
+
+		&:hover {
+			background-color: rgb(244, 244, 244);
+		}
+	}
+}
+
+.activeNav {
+	background-color: rgb(244, 244, 244);
+}

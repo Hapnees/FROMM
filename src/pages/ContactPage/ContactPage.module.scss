@@ -1,0 +1,43 @@
+.listWrapper {
+	display: flex;
+	justify-content: center;
+
+	@include ui-padding(top, 6);
+}
+
+.list {
+	display: flex;
+	gap: 80px;
+
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	> li {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		@include ui-font(5);
+
+		&:not(:last-child) {
+			@include ui-padding(right, 20);
+			border-right: 1px solid #000;
+		}
+	}
+}
+
+.listElHeader {
+	display: flex;
+	align-items: center;
+
+	gap: 8px;
+
+	@include ui-font(6);
+	@include ui-margin(bottom, 2);
+}
+
+.margin {
+	@include ui-margin(bottom, 4);
+}

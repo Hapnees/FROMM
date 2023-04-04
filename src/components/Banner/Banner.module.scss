@@ -1,0 +1,28 @@
+.wrapper {
+	position: relative;
+
+	> img {
+		width: 1905px;
+		min-height: 840px;
+	}
+}
+
+.info {
+	position: absolute;
+	left: 80px;
+	bottom: 80px;
+
+	color: #fff;
+
+	@include ui-font(12);
+
+	backdrop-filter: blur(4px);
+
+	box-shadow: 0 0 15px 5px #0000004d;
+	background-color: #00000044;
+
+	cursor: pointer;
+
+	border-radius: 6px;
+	padding: 20px;
+}

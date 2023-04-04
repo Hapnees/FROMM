@@ -1,0 +1,12 @@
+.button {
+	border: 1px solid #e5bd9a;
+	border-radius: 12px;
+	background-color: $btn-color;
+
+	font-weight: 500;
+	@include ui-font(4);
+
+	cursor: pointer;
+
+	padding: 10px 15px;
+}
